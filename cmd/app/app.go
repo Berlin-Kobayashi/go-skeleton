@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/danshu93/go-skeleton/taxation"
+)
 
 func main() {
-	fmt.Println("Hello World")
+	grossIncome := taxation.CalculateGrossIncomeForDesiredNetIncome(20000)
+	fmt.Println(grossIncome)
 }
